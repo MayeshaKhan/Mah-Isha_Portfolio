@@ -123,6 +123,7 @@ nav .navlinks li a {
     max-width: 500px;
     display: flex;
     flex-direction: column;
+    text-align: justify; 
 }
 
 .hero-text h5 {
@@ -144,11 +145,36 @@ nav .navlinks li a {
     color: #e5e5e5;
 }
 
+/* Button styles */
+.download-btn {
+    display: inline-block;
+    padding: 12px 5px;; /* Adjust padding for button size */
+    background-color: #007ced; /* Button background color */
+    color: #fff; /* Button text color */
+    font-size: 16px; /* Font size */
+    font-weight: 500; /* Font weight */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Cursor on hover */
+    text-align: center; /* Center text */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+    text-decoration: none; /* Remove underline */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Button hover effect */
+.download-btn:hover {
+    background-color: #005bb5; /* Darker shade on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
+}
 
 .hero-text .social i {
     color: #e5e5e5;
     font-size: 18px;
     margin-right: 10px;
+    
     transition: 0.5s;
 }
 
@@ -440,4 +466,40 @@ body {
         width: 80%;
         margin-bottom: 20px;
     }
+}
+/* Skills Page Styles */
+.skills-section {
+    padding: 60px 0;
+    text-align: center;
+    color: #e5e5e5;
+}
+
+.skills-section h2 {
+    color: #007ced;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.skills-list {
+    list-style-type: none;
+    padding: 0;
+    max-width: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.skills-list li {
+    background-color: #333;
+    color: #e5e5e5;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.skills-list li:hover {
+    transform: translateX(10px);
+    background-color: #444;
 }
